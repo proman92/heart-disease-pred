@@ -71,8 +71,3 @@ else:
     st.info("Please upload a CSV file containing your input data.")
 
 st.sidebar.markdown("""
-**Example Input Format:**
-```csv
-age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal
-63,1,3,145,233,1,0,150,0,2.3,0,0,1
-37,1,2,130,250,0,1,187,0,3.5,0,0,2

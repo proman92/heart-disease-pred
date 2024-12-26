@@ -25,7 +25,7 @@ from tensorflow.keras.utils import to_categorical
 # Load Data
 @st.cache_data
 def load_data():
-    return pd.read_csv("heart_new.csv")
+    return pd.read_csv("heart.csv")
 
 data = load_data()
 st.title("Heart Disease Prediction and Analysis")

@@ -69,5 +69,3 @@ if uploaded_file:
         st.error(f"Error in processing data: {e}")
 else:
     st.info("Please upload a CSV file containing your input data.")
-
-st.sidebar.markdown("""

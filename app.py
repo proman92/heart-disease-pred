@@ -128,11 +128,11 @@ if st.sidebar.button("Analyze New Data"):
         y_pred = model.predict(X_test)
         acc = accuracy_score(y_test, y_pred)
         prec = precision_score(y_test, y_pred)
-        recall-sensitivity = recall_score(y_test, y_pred)
+        sensitivity = recall_score(y_test, y_pred)
         f1 = f1_score(y_test, y_pred)
         tn, fp, fn, tp = confusion_matrix(y_test, y_pred).ravel()
         specificity = tn / (tn + fp)
-        metrics[model_name] = [acc, prec, recall-sensitivity, specificity, f1]
+        metrics[model_name] = [acc, prec, sensitivity, specificity, f1]
 
     metrics_df = pd.DataFrame(metrics, index=["Accuracy", "Precision", "Recall", "F1-Score"])
     st.dataframe(metrics_df)

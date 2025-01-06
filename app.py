@@ -122,8 +122,8 @@ if st.sidebar.button("Analyze New Data"):
     st.subheader("Model Performance on Test Data")
     metrics = {}
     for model_name, model in zip(
-        ["KNN", "Naive Bayes", "Decision Tree", "Logistic Regression", "SVM", "ANN"],
-        [knn_model, nb_model, dt_model, lr_model, svm_model, ann_model]
+        ["KNN", "Naive Bayes", "Decision Tree", "Logistic Regression", "SVM"],
+        [knn_model, nb_model, dt_model, lr_model, svm_model]
     ):
         y_pred = model.predict(X_test)
         acc = accuracy_score(y_test, y_pred)
